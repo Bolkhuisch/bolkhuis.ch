@@ -5,8 +5,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
-    /* overflow-x: hidden; */
     color: white;
 }
 
@@ -82,6 +80,7 @@ h1.name {
 
 #card-1 {
     background-image: url("../img/bolkhuisch_tulpen.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -97,10 +96,8 @@ h1.name {
 }
 
 #card-2 {
-    /* background-image: url("../img/dakterras-bbq-nov-2019_small.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
-    position: sticky;
+    position: absolute;
+    top: 0;
 }
 
 #card-2 h1.name {
@@ -129,10 +126,42 @@ h1.name {
 /* card 3, ook wel timer */
 #card-3 {
     background-image: url("../img/huischweekend-coo.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    left: 0;
     z-index: -9;
+}
+
+.box-2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.sticky-fix {
+    /* margin-top: 100vh; */
+    width: 100%;;
+}
+
+h1.name2 {
+    text-align: center;
+    line-height: 50vh;
+    /* font-size: 600%; */
+    color: white;
+}
+@media only screen and (min-width: 768px) {
+    h1.name2 {
+        font-size: 600%;
+    }
+}
+
+#card-4 {
+    background-image: url("../img/dakterras-bbq-nov-2019_small.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
