@@ -1,4 +1,11 @@
 /**
+ * Probeer vooral niet te veel te kijken naar dit ultieme voorbeeld van
+ * "beunen"... 
+ *
+ * @author Beun&Haas BV
+ */
+
+/**
  * Box sizing
  */
 * {
@@ -41,7 +48,8 @@
 }
 
 .color-black {
-    background-color: black;
+    background-color: white;
+    color: black;
 }
 
 /*****************************************************************************
@@ -70,7 +78,7 @@ h1.name {
     text-align: center;
     line-height: 100vh;
     /* font-size: 600%; */
-    color: white;
+    /* color: white; */
 }
 @media only screen and (min-width: 768px) {
     h1.name {
@@ -100,25 +108,17 @@ h1.name {
     top: 0;
 }
 
-#card-2 h1.name {
+h1.big {
     line-height: normal;
     margin-bottom: 10px;
 }
 
-#card-2 img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    bottom: 10px;
-    display: block;
-}
-
-#card-2 p {
+p.big {
     padding: 5px;
     text-align: justify;
 }
 @media only screen and (min-width: 768px) {
-    #card-2 p {
+    p.big {
         font-size: 300%;
     }
 }
@@ -136,7 +136,30 @@ h1.name {
     z-index: -9;
 }
 
+#card-3-2 {
+    background-image: url("../img/dakterras-bbq-nov-2019_small.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: -8;
+}
+
+#card-3-8 {
+    position: absolute;
+    top: 0;
+}
+
 .box-2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.box-3 {
     width: 100%;
     height: 100%;
     position: relative;
@@ -144,7 +167,7 @@ h1.name {
 
 .sticky-fix {
     /* margin-top: 100vh; */
-    width: 100%;;
+    width: 100%;
 }
 
 h1.name2 {
@@ -160,8 +183,23 @@ h1.name2 {
 }
 
 #card-4 {
-    background-image: url("../img/dakterras-bbq-nov-2019_small.jpg");
+    /* background-image: url("../img/dakterras-bbq-nov-2019_small.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
+
+.huischborrel p {
+    width: 100%;
+    font-size: xx-large;
+    text-align: center;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .huischborrel p {
+        font-size: 600%;
+    }
+}
+
+span#timer
