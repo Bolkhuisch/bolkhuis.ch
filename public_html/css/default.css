@@ -167,25 +167,23 @@ h1.name {
     }
 }
 
-#card-1 {
+/*****************************************************************************
+ * Home page - backgrounds
+ ****************************************************************************/
+/* title background */
+#bg-1 {
     background-image: url("../img/bolkhuisch_tulpen.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-/**
- * paralax scrolling 
- */
-#card-1 {
     position: fixed;
     top:0;
     left:0;
     z-index: -10;
 }
 
-/* card 3, ook wel timer */
-#card-3 {
+/* timer background */
+#bg-2 {
     background-image: url("../img/huischweekend-coo.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -197,7 +195,8 @@ h1.name {
     z-index: -9;
 }
 
-#card-3-2 {
+/* huischisgaaf background */
+#bg-3 {
     background-image: url("../img/dakterras-bbq-nov-2019_small.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -209,13 +208,10 @@ h1.name {
     z-index: -8;
 }
 
-.box-2 {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.box-3 {
+/*****************************************************************************
+ * Home page - background boxes
+ ****************************************************************************/ 
+.bg-box {
     width: 100%;
     height: 100%;
     position: relative;
