@@ -16,7 +16,6 @@
 body::-webkit-scrollbar {
     display: none;
 }
-  
 /* Hide scrollbar for IE and Edge */
 body {
     -ms-overflow-style: none;
@@ -63,9 +62,9 @@ body {
  * clear fix
  */
 .clearfix {
-    content: "";
+    /* content: "";
     clear: both;
-    display: table;
+    display: table; */
 }
 
 /**
