@@ -59,15 +59,6 @@ body {
 }
 
 /**
- * clear fix
- */
-.clearfix {
-    /* content: "";
-    clear: both;
-    display: table; */
-}
-
-/**
  * Home page - box 1 h1
  */
 h1.name {
