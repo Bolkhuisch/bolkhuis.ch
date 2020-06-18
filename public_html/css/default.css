@@ -5,9 +5,6 @@
  * @author Beun&Haas BV
  */
 
-/**
- * Box sizing
- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,15 +12,14 @@
     color: white;
 }
 
- /* Hide scrollbar for Chrome, Safari and Opera */
- .example::-webkit-scrollbar {
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
     display: none;
-  }
-  
-  /* Hide scrollbar for IE and Edge */
-  .example {
+}
+/* Hide scrollbar for IE and Edge */
+body {
     -ms-overflow-style: none;
-  } 
+} 
 
 /*****************************************************************************
  * Fonts
@@ -52,6 +48,10 @@
     color: black;
 }
 
+u {
+    color: inherit;
+}
+
 /*****************************************************************************
  * Home page - full boxes
  ****************************************************************************/
@@ -59,72 +59,127 @@
     margin: 0;
     width: 100%;
     height: 100vh;
+    max-height: 100vh;
     display: block;
 }
 
-/**
- * clear fix
- */
-.clearfix {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/**
- * Home page - box 1 h1
- */
-h1.name {
+/*****************************************************************************
+ * Home page - title
+ ****************************************************************************/
+/* mobile */
+.title h1 {
     text-align: center;
     line-height: 100vh;
-    /* font-size: 600%; */
-    /* color: white; */
 }
-@media only screen and (min-width: 768px) {
-    h1.name {
+/* tablets */
+@media only screen and (min-width: 600px) {
+    .title h1 {
+        font-size: 350%;
+    }
+}
+/* pc */
+@media only screen and (min-width: 769px) {
+    .title h1 {
+        /* font-size: 400%; */
         font-size: 600%;
     }
 }
 
-#card-1 {
+/*****************************************************************************
+ * Home page - card
+ ****************************************************************************/
+/* mobile */
+.card {
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 0;
+}
+.card h1 {
+    font-size: 150%;
+    color: inherit;
+    text-align: center;
+    margin: 30px 0 10px 0;
+}
+.card p {
+    color: inherit;
+    font-size: 100%;
+    padding: 0 20px 0 20px;
+}
+/* tablets */
+@media only screen and (min-width: 600px) {
+    .card h1 {
+        font-size: 200%;
+    }
+    .card p {
+        font-size: 120%;
+    }
+}
+/* pc */
+@media only screen and (min-width: 769px) {
+    .card h1 {
+        font-size: 600%;
+        margin-bottom: 60px;
+    }
+    .card p {
+        font-size: 200%;
+        padding: 0 400px 0 400px;
+    }
+}
+
+/*****************************************************************************
+ * Home page - huischborrel
+ ****************************************************************************/
+.huischborrel p {
+    width: 100%;
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+}
+.huischborrel span#huischborrel-placeholder {
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+}
+/* tablets */
+@media only screen and (min-width: 600px) {
+    .huischborrel p {
+        /* font-size: 200%; */
+    }
+    .huischborrel span#huischborrel-placeholder {
+        display: block;
+        text-align: center;
+        font-weight: bolder;
+        font-size: large;
+    }
+}
+/* pc */
+@media only screen and (min-width: 769px) {
+    .huischborrel p {
+        font-size: 600%;
+    }
+    .huischborrel span#huischborrel-placeholder {
+        font-size: 300%;
+    }
+}
+
+/*****************************************************************************
+ * Home page - backgrounds
+ ****************************************************************************/
+/* title background */
+#bg-1 {
     background-image: url("../img/bolkhuisch_tulpen.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-/**
- * paralax scrolling 
- */
-#card-1 {
     position: fixed;
     top:0;
     left:0;
     z-index: -10;
 }
 
-#card-2 {
-    position: absolute;
-    top: 0;
-}
-
-h1.big {
-    line-height: normal;
-    margin-bottom: 10px;
-}
-
-p.big {
-    padding: 5px;
-    text-align: justify;
-}
-@media only screen and (min-width: 768px) {
-    p.big {
-        font-size: 300%;
-    }
-}
-
-/* card 3, ook wel timer */
-#card-3 {
+/* timer background */
+#bg-2 {
     background-image: url("../img/huischweekend-coo.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -136,7 +191,8 @@ p.big {
     z-index: -9;
 }
 
-#card-3-2 {
+/* huischisgaaf background */
+#bg-3 {
     background-image: url("../img/dakterras-bbq-nov-2019_small.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -148,58 +204,21 @@ p.big {
     z-index: -8;
 }
 
-#card-3-8 {
-    position: absolute;
-    top: 0;
-}
-
-.box-2 {
+/*****************************************************************************
+ * Home page - background boxes
+ ****************************************************************************/ 
+.bg-box {
     width: 100%;
     height: 100%;
     position: relative;
 }
 
-.box-3 {
-    width: 100%;
-    height: 100%;
-    position: relative;
+/*****************************************************************************
+ * Home page - link markup
+ ****************************************************************************/
+a {
+    color: forestgreen;
 }
-
-.sticky-fix {
-    /* margin-top: 100vh; */
-    width: 100%;
+a:hover {
+    color: yellowgreen;
 }
-
-h1.name2 {
-    text-align: center;
-    line-height: 50vh;
-    /* font-size: 600%; */
-    color: white;
-}
-@media only screen and (min-width: 768px) {
-    h1.name2 {
-        font-size: 600%;
-    }
-}
-
-#card-4 {
-    /* background-image: url("../img/dakterras-bbq-nov-2019_small.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
-}
-
-.huischborrel p {
-    width: 100%;
-    font-size: xx-large;
-    text-align: center;
-    padding: 10px;
-}
-
-@media only screen and (min-width: 768px) {
-    .huischborrel p {
-        font-size: 600%;
-    }
-}
-
-span#timer
