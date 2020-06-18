@@ -80,7 +80,8 @@ u {
 /* pc */
 @media only screen and (min-width: 769px) {
     .title h1 {
-        font-size: 400%;
+        /* font-size: 400%; */
+        font-size: 600%;
     }
 }
 
@@ -117,10 +118,12 @@ u {
 /* pc */
 @media only screen and (min-width: 769px) {
     .card h1 {
-        /* TODO add tablet .description h1 */
+        font-size: 600%;
+        margin-bottom: 60px;
     }
     .card p {
-        /* TODO add tablet .description p */
+        font-size: 200%;
+        padding: 0 400px 0 400px;
     }
 }
 
@@ -153,7 +156,10 @@ u {
 /* pc */
 @media only screen and (min-width: 769px) {
     .huischborrel p {
-        /* font-size: 400%; */
+        font-size: 600%;
+    }
+    .huischborrel span#huischborrel-placeholder {
+        font-size: 300%;
     }
 }
 
