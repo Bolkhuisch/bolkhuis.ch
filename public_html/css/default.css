@@ -74,11 +74,11 @@ u {
 /* tablets */
 @media only screen and (min-width: 600px) {
     .title h1 {
-        font-size: 250%;
+        font-size: 350%;
     }
 }
 /* pc */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
     .title h1 {
         font-size: 400%;
     }
@@ -108,14 +108,14 @@ u {
 /* tablets */
 @media only screen and (min-width: 600px) {
     .card h1 {
-        /* TODO add tablet .description h1 */
+        font-size: 200%;
     }
     .card p {
-        /* TODO add tablet .description p */
+        font-size: 120%;
     }
 }
 /* pc */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 769px) {
     .card h1 {
         /* TODO add tablet .description h1 */
     }
@@ -141,38 +141,19 @@ u {
 /* tablets */
 @media only screen and (min-width: 600px) {
     .huischborrel p {
-        font-size: 200%;
+        /* font-size: 200%; */
+    }
+    .huischborrel span#huischborrel-placeholder {
+        display: block;
+        text-align: center;
+        font-weight: bolder;
+        font-size: large;
     }
 }
 /* pc */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
     .huischborrel p {
-        font-size: 400%;
-    }
-}
-
-
-/*****************************************************************************
- * Home page - instemming
- ****************************************************************************/
-.instemming {}
-/**
- * Home page - box 1 h1
- */
-h1.name {
-    text-align: center;
-    line-height: 100vh;
-    /* font-size: 600%; */
-    /* color: white; */
-}
-@media only screen and (min-width: 600px) {
-    h1.name {
-        font-size: 250%;
-    }
-}
-@media only screen and (min-width: 768px) {
-    h1.name {
-        font-size: 400%;
+        /* font-size: 400%; */
     }
 }
 
