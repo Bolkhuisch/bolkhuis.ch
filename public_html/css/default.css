@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     color: white;
-    font-family: 'Open Sans', sans-serif;   
+    /* font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* parallax backgrounds */
@@ -28,7 +29,11 @@
 }
 
 .bgcard-2 {
-    background-image: url("../img/huischweekend-coo.jpg");
+    background-image: linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            ),
+            url("../img/huischweekend-coo.jpg");
     min-height: 50vh;
 }
 
@@ -106,4 +111,10 @@ u {
 #huischborrel-placeholder {
     font-size: 24px;
     font-weight: bold;
+}
+
+p#huisch-borrel {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 12px;
 }
