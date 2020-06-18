@@ -45,7 +45,7 @@ let mainborrel = function () {
         // Add correct single or plural time denotation
         // TODO fix that "0 dag" becomes "0 dagen". Also for seconds and minutes.
         // days = (days > 1) ? days + " dagen" : days + " dag";
-        days = (days > 1) ? days + " dagen" : ((days == 9) ? days + " dagen" : days + " dag");
+        days = (days > 1) ? days + " dagen" : ((days == 0) ? days + " dagen" : days + " dag");
         // hours can already be expressed in "nog 3 uur" so no singular/plural needed
         minutes = (minutes > 1) ? minutes + " minuten" : ((minutes == 0) ? minutes + " minuten" : minutes + " minuut");
         seconds = (seconds > 1) ? seconds + " seconden" : seconds + " seconde";
