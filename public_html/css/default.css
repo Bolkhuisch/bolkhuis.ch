@@ -81,43 +81,70 @@ body {
 }
 
 /*****************************************************************************
- * Home page - description
+ * Home page - card
  ****************************************************************************/
 /* mobile */
-.description {
+.card {
     background-color: white;
     color: black;
 }
-.description h1 {
+.card h1 {
     font-size: 150%;
     color: inherit;
     text-align: center;
     margin: 30px 0 10px 0;
 }
-.description p {
+.card p {
     color: inherit;
     font-size: 100%;
     padding: 0 20px 0 20px;
 }
 /* tablets */
 @media only screen and (min-width: 600px) {
-    .description h1 {
+    .card h1 {
         /* TODO add tablet .description h1 */
     }
-    .description p {
+    .card p {
         /* TODO add tablet .description p */
     }
 }
 /* pc */
 @media only screen and (min-width: 600px) {
-    .description h1 {
+    .card h1 {
         /* TODO add tablet .description h1 */
     }
-    .description p {
+    .card p {
         /* TODO add tablet .description p */
     }
 }
 
+/*****************************************************************************
+ * Home page - huischborrel
+ ****************************************************************************/
+.huischborrel p {
+    width: 100%;
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+}
+/* tablets */
+@media only screen and (min-width: 600px) {
+    .huischborrel p {
+        font-size: 200%;
+    }
+}
+/* pc */
+@media only screen and (min-width: 768px) {
+    .huischborrel p {
+        font-size: 400%;
+    }
+}
+
+
+/*****************************************************************************
+ * Home page - instemming
+ ****************************************************************************/
+.instemming {}
 /**
  * Home page - box 1 h1
  */
@@ -251,21 +278,4 @@ h1.name2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; */
-}
-
-.huischborrel p {
-    width: 100%;
-    font-size: xx-large;
-    text-align: center;
-    padding: 10px;
-}
-@media only screen and (min-width: 600px) {
-    .huischborrel p {
-        font-size: 200%;
-    }
-}
-@media only screen and (min-width: 768px) {
-    .huischborrel p {
-        font-size: 400%;
-    }
 }
