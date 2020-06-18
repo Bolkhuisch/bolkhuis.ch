@@ -87,6 +87,8 @@ body {
 .card {
     background-color: white;
     color: black;
+    position: absolute;
+    top: 0;
 }
 .card h1 {
     font-size: 150%;
@@ -182,11 +184,6 @@ h1.name {
     z-index: -10;
 }
 
-#card-2 {
-    position: absolute;
-    top: 0;
-}
-
 /* card 3, ook wel timer */
 #card-3 {
     background-image: url("../img/huischweekend-coo.jpg");
@@ -210,11 +207,6 @@ h1.name {
     top: 0;
     left: 0;
     z-index: -8;
-}
-
-#card-3-8 {
-    position: absolute;
-    top: 0;
 }
 
 .box-2 {
