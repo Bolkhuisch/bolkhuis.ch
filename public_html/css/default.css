@@ -48,6 +48,10 @@ body {
     color: black;
 }
 
+u {
+    color: inherit;
+}
+
 /*****************************************************************************
  * Home page - full boxes
  ****************************************************************************/
@@ -128,6 +132,11 @@ body {
     font-size: xx-large;
     text-align: center;
     padding: 20px;
+}
+.huischborrel span#huischborrel-placeholder {
+    display: block;
+    text-align: center;
+    font-weight: bolder;
 }
 /* tablets */
 @media only screen and (min-width: 600px) {
@@ -217,9 +226,12 @@ h1.name {
     position: relative;
 }
 
-#card-4 {
-    /* background-image: url("../img/dakterras-bbq-nov-2019_small.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
+/*****************************************************************************
+ * Home page - link markup
+ ****************************************************************************/
+a {
+    color: forestgreen;
+}
+a:hover {
+    color: yellowgreen;
 }
