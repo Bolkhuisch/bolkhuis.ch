@@ -147,3 +147,11 @@ p#huisch-borrel {
     clear: both;
     display: table;
 }
+
+#borrel-tijd {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 24px;
+    font-size: 36px;
+}

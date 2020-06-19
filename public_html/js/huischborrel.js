@@ -31,10 +31,20 @@ let mainborrel = function () {
     // Set the start time of the borrel
     nextThirdThursday = new Date(nextThirdThursday.setHours(borrelStartTijd));
 
-    let borrelSpan = $("#huisch-borrel");
+
     // If it is the day of the huischborrel and it is past the start time, then it is time to borrel
     if (today.getDate() === nextThirdThursday.getDate() && today.getHours() >= borrelStartTijd) {
-        borrelSpan.text("TIJD OM TE BORRELEN!");
+        // hide the numbers
+        $("#day-0").css("display", "none");
+        $("#day-1").css("display", "none");
+        $("#hour-0").css("display", "none");
+        $("#hour-1").css("display", "none");
+        $("#minute-0").css("display", "none");
+        $("#minute-1").css("display", "none");
+        $("#second-0").css("display", "none");
+        $("#second-1").css("display", "none");
+        // make borrel-tijd visible
+        $("#borrel-tijd").css("display", "block");
     } else {
         let timeDiff = nextThirdThursday - today;
         let days = Math.floor(timeDiff/1000/60/60/24);
@@ -42,15 +52,20 @@ let mainborrel = function () {
         let minutes = Math.floor((timeDiff-days*24*60*60*1000-hours*60*60*1000)/1000/60);
         let seconds = Math.floor((timeDiff-days*24*60*60*1000-(hours*60*60*1000)-(minutes*60*1000))/1000);
 
-        // Add correct single or plural time denotation
-        // TODO fix that "0 dag" becomes "0 dagen". Also for seconds and minutes.
-        // days = (days > 1) ? days + " dagen" : days + " dag";
-        days = (days > 1) ? days + " dagen" : ((days == 0) ? days + " dagen" : days + " dag");
-        // hours can already be expressed in "nog 3 uur" so no singular/plural needed
-        minutes = (minutes > 1) ? minutes + " minuten" : ((minutes == 0) ? minutes + " minuten" : minutes + " minuut");
-        seconds = (seconds > 1) ? seconds + " seconden" : seconds + " seconde";
+        // split the days, hours, and minutes into two numbers
+        days = (days < 10) ? "0" + days : "" + days;
+        hours = (hours < 10) ? "0" + hours : "" + hours;
+        minutes = (minutes < 10) ? "0" + minutes : "" + minutes;
+        seconds = (seconds < 10) ? "0" + seconds : "" + seconds;
 
-        borrelSpan.text("Nog " + days + ", " + hours + " uur, " + minutes + " en " + seconds + " tot de volgende Huischborrel.");
+        $("#day-0").text(days.charAt(0));
+        $("#day-1").text(days.charAt(1));
+        $("#hour-0").text(hours.charAt(0));
+        $("#hour-1").text(hours.charAt(1));
+        $("#minute-0").text(minutes.charAt(0));
+        $("#minute-1").text(minutes.charAt(1));
+        $("#second-0").text(seconds.charAt(0));
+        $("#second-1").text(seconds.charAt(1));
     }
 };
 
