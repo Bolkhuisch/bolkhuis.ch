@@ -35,14 +35,9 @@ let mainborrel = function () {
     // If it is the day of the huischborrel and it is past the start time, then it is time to borrel
     if (today.getDate() === nextThirdThursday.getDate() && today.getHours() >= borrelStartTijd) {
         // hide the numbers
-        $("#day-0").css("display", "none");
-        $("#day-1").css("display", "none");
-        $("#hour-0").css("display", "none");
-        $("#hour-1").css("display", "none");
-        $("#minute-0").css("display", "none");
-        $("#minute-1").css("display", "none");
-        $("#second-0").css("display", "none");
-        $("#second-1").css("display", "none");
+        $("span.number").css("display", "none");
+        $("span.text").css("display", "none");
+
         // make borrel-tijd visible
         $("#borrel-tijd").css("display", "block");
     } else {
