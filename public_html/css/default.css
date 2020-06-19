@@ -85,7 +85,7 @@ h1 {
     padding-bottom: 24px;
 }
 @media only screen and (min-width: 1024px) {
-    .card-1 h1, .card-2 h1 {
+    .card-1 h1, .card-2 h1, .bgcard-2 h1 {
         font-size: 72px;
     }
     .card-1 p, .card-2 p {
@@ -132,6 +132,11 @@ p#huisch-borrel {
     border-radius: 10%;
     font-weight: bolder;    
 }
+@media only screen and (min-width: 1024px) {
+    .huisch-borrel span.number {
+        font-size: 64px;
+    }
+}
 
 .huisch-borrel span.text {
     width: 100%;
@@ -140,6 +145,11 @@ p#huisch-borrel {
     text-align: center;
     font-size: 24px;
     margin-bottom: 24px;
+}
+@media only screen and (min-width: 1024px) {
+    .huisch-borrel span.text {
+        font-size: 42px;
+    }
 }
 
 .huisch-borrel::after {
