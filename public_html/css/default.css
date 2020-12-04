@@ -7,8 +7,8 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-/* parallax backgrounds */
-.bgcard-1, .bgcard-2, .bgcard-3 {
+/* parallax backgrounds for background cards */
+.bgcard {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -17,7 +17,7 @@
 
 /* Turn off parallax for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .bgcard-1, .bgcard-2, .bgcard-3 {
+    .bgcard {
       background-attachment: scroll;
     }
   }
@@ -47,12 +47,12 @@ h1 {
     text-align: center;
 }
 
-.bgcard-1 h1, .bgcard-3 h1 {
+.bgcard-title h1 {
     line-height: 100vh;
     font-size: 32px;
 }
 @media only screen and (min-width: 1024px) {
-    .bgcard-1 h1, .bgcard-3 h1 {
+    .bgcard-title h1 {
         font-size: 72px;
     }
 }
