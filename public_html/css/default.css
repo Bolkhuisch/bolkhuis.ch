@@ -17,10 +17,6 @@
 }
 
 
-.geenBorrel{
-    display: none;
-}
-
 /* Turn off parallax for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
     .bgcard {
@@ -173,4 +169,8 @@ p#huisch-borrel {
     text-align: left;
     padding: 24px;
     font-size: 36px;
+}
+
+.geenBorrel{
+    display: none;
 }
